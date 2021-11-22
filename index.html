@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <title>OH Weather Dashboard</title>
+  </head>
+  <body>
+    <header
+      class="
+        bg-gradient-to-r
+        from-green-400
+        to-blue-500
+        h-20
+        flex
+        justify-center
+        items-center
+      "
+    >
+      <h1 class="text-white font-bold text-6xl tracking-wide">
+        Weather Dashboard
+      </h1>
+    </header>
+    <aside class="w-60 flex-none pl-4">
+      <h2 class="font-semibold text-lg">Weather Search:</h2>
+      <form>
+        <input
+          class="search-field"
+          placeholder="Type a City Name"
+          type="text"
+        />
+        <button id="searchBtn" type="submit" class="search-button">
+            <img src="images\search.png" />
+          </button>
+      </form>
+      <hr class="mt-2 border-green-400 h-1 bg-green-400" />
+      <div id="searches"></div>
+    </aside>
+    <section class="ml-2 flex-1 flex border border-1 border-blue-100">
+        <div class="m-2 text-xl">
+            <h3 id="name" class="font-semibold">Name: </h3>
+            <p class="mt-2" id="temp">Temperature: </p>
+            <p class="mt-2" id="wind">Wind: </p>
+            <p class="mt-2" id="humid">Humidity: </p>
+            <p class="mt-2" id="uv">UV Index: </p>
+        </div>
+        <div class="m-2">
+            <img src="#" alt="#" id="logo" class="h-12 w-12" hidden>
+        </div>
+    </section>
+</main>
+<script src="assets\js\script.js"></script>
+  </body>
+</html>

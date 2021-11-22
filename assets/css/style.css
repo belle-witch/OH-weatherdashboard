@@ -1,0 +1,30 @@
+* {
+    font-family: Montserrat;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+  }
+  
+.search-field {
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    outline-color: hsl(180, 59%, 80%);
+    border-radius: 100px;
+    outline: solid;
+  }
+  
+  .search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+  }
+  
+  .search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
